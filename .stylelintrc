@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [ "stylelint-order" ],
+  "rules": {
+    "selector-pseudo-element-colon-notation": "double",
+    "scss/selector-no-union-class-name": true,
+    "order/properties-alphabetical-order": true
+  },
+  "ignoreFiles": [ "**/node_modules/**" ]
+}
