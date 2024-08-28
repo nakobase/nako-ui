@@ -1,0 +1,20 @@
+:root {
+  /* Primitives */
+  --nako-p-device-mobile-sm: 350px;
+  --nako-p-device-mobile-md: 425px;
+  --nako-p-device-mobile-lg: 576px;
+  --nako-p-device-tablet-sm: 600px;
+  --nako-p-device-tablet-md: 768px;
+  --nako-p-device-tablet-lg: 820px;
+  --nako-p-laptop-sm: 920px;
+  --nako-p-laptop-md: 1024px;
+  --nako-p-laptop-lg: 1440px;
+  --nako-p-desktop-sm: 1600px;
+  --nako-p-desktop-md: 1920px;
+  --nako-p-desktop-lg: 2560px;
+
+  /* Semantics */
+  --nako-s-max-width-sm: var(--nako-p-device-mobile-lg);
+  --nako-s-max-width-md: var(--nako-p-device-tablet-md);
+  --nako-s-max-width-lg: var(--nako-p-laptop-md);
+}
