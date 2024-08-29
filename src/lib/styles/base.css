@@ -1,20 +1,79 @@
 :root {
-  /* Primitives */
+  /*
+  Primitives
+  */
+  /* Device */
   --nako-p-device-mobile-sm: 350px;
   --nako-p-device-mobile-md: 425px;
   --nako-p-device-mobile-lg: 576px;
   --nako-p-device-tablet-sm: 600px;
   --nako-p-device-tablet-md: 768px;
   --nako-p-device-tablet-lg: 820px;
-  --nako-p-laptop-sm: 920px;
-  --nako-p-laptop-md: 1024px;
-  --nako-p-laptop-lg: 1440px;
-  --nako-p-desktop-sm: 1600px;
-  --nako-p-desktop-md: 1920px;
-  --nako-p-desktop-lg: 2560px;
+  --nako-p-device-laptop-sm: 920px;
+  --nako-p-device-laptop-md: 1024px;
+  --nako-p-device-laptop-lg: 1440px;
+  --nako-p-device-desktop-sm: 1600px;
+  --nako-p-device-desktop-md: 1920px;
+  --nako-p-device-desktop-lg: 2560px;
 
-  /* Semantics */
+  /*
+  Semantics
+  */
+  /* MaxWidth */
   --nako-s-max-width-sm: var(--nako-p-device-mobile-lg);
   --nako-s-max-width-md: var(--nako-p-device-tablet-md);
-  --nako-s-max-width-lg: var(--nako-p-laptop-md);
+  --nako-s-max-width-lg: var(--nako-p-device-laptop-md);
+  /* Spacing */
+  --nako-s-spacing-xxs: .25rem /* 16px: 4px */;
+  --nako-s-spacing-xs: .5rem /* 16px: 8px */;
+  --nako-s-spacing-sm: .75rem /* 16px: 12px */;
+  --nako-s-spacing-md: 1rem /* 16px: 16px */;
+  --nako-s-spacing-lg: 1.25rem /* 16px: 24px */;
+  --nako-s-spacing-xl: 1.5rem /* 16px: 32px */;
+  --nako-s-spacing-xxl: 2rem /* 16px: 48px */;
+  --nako-s-spacing-3xl: 2.5rem /* 16px: 64px */;
+  --nako-s-spacing-4xl: 3rem /* 16px: 80px */;
+  --nako-s-spacing-5xl: 3.5rem /* 16px: 96px */;
+  /* FontSize */
+  --nako-s-font-size-xxs: .75rem /* 16px: 12px */;
+  --nako-s-font-size-xs: .875rem /* 16px: 14px */;
+  --nako-s-font-size-sm: 1rem /* 16px: 16px */;
+  --nako-s-font-size-md: 1.125rem /* 16px: 18px */;
+  --nako-s-font-size-lg: 1.25rem /* 16px: 20px */;
+  --nako-s-font-size-xl: 1.5rem /* 16px: 24px */;
+  --nako-s-font-size-xxl: 1.75rem /* 16px: 28px */;
+  --nako-s-font-size-3xl: 2rem /* 16px: 32px */;
+  --nako-s-font-size-4xl: 2.5rem /* 16px: 40px */;
+  --nako-s-font-size-5xl: 3rem /* 16px: 48px */;
+  --nako-s-font-size-6xl: 3.5rem /* 16px: 56px */;
+  --nako-s-font-size-7xl: 4rem /* 16px: 64px */;
+  --nako-s-font-size-8xl: 4.5rem /* 16px: 72px */;
+  --nako-s-font-size-9xl: 5rem /* 16px: 80px */;
+  /* FontWeight */
+  --nako-s-font-weight-light: 300;
+  --nako-s-font-weight-normal: 400;
+  --nako-s-font-weight-medium: 500;
+  --nako-s-font-weight-semibold: 600;
+  --nako-s-font-weight-bold: 700;
+  /* LineHeight */
+  --nako-s-line-height-xxs: 1.25;
+  --nako-s-line-height-xs: 1.375;
+  --nako-s-line-height-sm: 1.5;
+  --nako-s-line-height-md: 1.625;
+  --nako-s-line-height-lg: 1.75;
+  --nako-s-line-height-xl: 1.875;
+  --nako-s-line-height-xxl: 2;
+  /* BorderRadius */
+  --nako-s-border-radius-sm: .25rem /* 16px: 4px */;
+  --nako-s-border-radius-md: .5rem /* 16px: 8px */;
+  --nako-s-border-radius-lg: .75rem /* 16px: 12px */;
+  --nako-s-border-radius-xl: 1rem /* 16px: 16px */;
+  /* BorderWidth */
+  --nako-s-border-width-sm: 1px;
+  --nako-s-border-width-md: 2px;
+  --nako-s-border-width-lg: 3px;
+  /* Shadow */
+  --nako-s-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --nako-s-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --nako-s-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
