@@ -5,6 +5,7 @@
 
   &.max-w-md {
     max-width: var(--nako-s-max-width-md);
+    @apply nako-bg-blue-50;
   }
 
   &.max-w-sm {
