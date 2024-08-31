@@ -2,12 +2,15 @@
 // layouts
 export { Container } from './components/layouts/Container';
 
-// ui
-export { Button, buttonVariants } from './components/ui/button';
-export {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from './components/ui/accordion';
-export { Alert, AlertDescription, AlertTitle } from './components/ui/alert';
+// // ui
+export * from './components/ui/button';
+// export {
+//   Accordion,
+//   AccordionContent,
+//   AccordionItem,
+//   AccordionTrigger,
+// } from './components/ui/accordion';
+export * from './components/ui/alert';
+
+// styles
+import '../index.css';

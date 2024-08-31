@@ -15,11 +15,12 @@ export default defineConfig({
       name: 'Nako UI',
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'tailwindcss'],
+      external: ['react', 'react/jsx-runtime', 'react-dom', 'tailwindcss'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'react/jsx-runtime',
           tailwindcss: 'tailwindcss',
         },
       },
