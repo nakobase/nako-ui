@@ -25,7 +25,12 @@ export const Container: FC<Props<AsType>> = ({
   className,
   ...props
 }) => {
-  const cns = cx(styles.base, maxW && styles[`max-w-${maxW}`], className);
+  const cns = cx(
+    styles.base,
+    maxW && styles[`max-w-${maxW}`],
+    'hover:nako-bg-secondary/80',
+    className,
+  );
 
   return (
     <As className={cns} {...props}>
