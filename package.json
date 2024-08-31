@@ -32,7 +32,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "rimraf dist && pnpm run build:js && pnpm run copy:css",
+    "build": "pnpm rimraf dist && pnpm run build:js && pnpm run copy:css",
     "build:js": "tsc -b && vite build",
     "copy:css": "cp src/lib/styles/base.css dist/base.css",
     "lint": "eslint .",
