@@ -1,19 +1,34 @@
-import { FC, HTMLAttributes, ReactNode } from 'react';
+import { ComponentPropsWithoutRef, FC } from 'react';
+import cx from 'clsx';
 import styles from './style.module.scss';
 
-type Props = {
-  as?: 'div' | 'nav' | 'section' | 'article' | 'aside' | 'header' | 'footer';
-  children: ReactNode;
-} & HTMLAttributes<HTMLElement>;
+type AsType =
+  | 'div'
+  | 'section'
+  | 'article'
+  | 'nav'
+  | 'aside'
+  | 'header'
+  | 'footer'
+  | 'main'
+  | 'figure';
 
-export const Container: FC<Props> = ({
+type Props<T extends AsType> = {
+  as?: T;
+  maxW?: 'sm' | 'md';
+} & ComponentPropsWithoutRef<T>;
+
+export const Container: FC<Props<AsType>> = ({
   as: As = 'div',
+  maxW,
   children,
   className,
   ...props
 }) => {
+  const cns = cx(styles.base, maxW && styles[`max-w-${maxW}`], className);
+
   return (
-    <As className={styles.wrapper} {...props}>
+    <As className={cns} {...props}>
       {children}
     </As>
   );

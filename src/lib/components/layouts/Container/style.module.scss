@@ -1,6 +1,14 @@
-.wrapper {
-  width: 100%;
-  max-width: 1200px;
+.base {
   margin: 0 auto;
-  padding: 0 var(--space-20, 20px);
+  max-width: var(--nako-s-max-width-lg);
+  width: 100%;
+
+  &.max-w-md {
+    max-width: var(--nako-s-max-width-md);
+    @apply nako-bg-blue-50;
+  }
+
+  &.max-w-sm {
+    max-width: var(--nako-s-max-width-sm);
+  }
 }
