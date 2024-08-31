@@ -22,22 +22,4 @@ bun add @nakobase/nako-ui
 
 ## Usage
 
-To start using Nako UI, this is the steps you need to follow:
-
-1. Import the CSS file in your project.
-
-```jsx
-import '@nakobase/nako-ui/dist/base.css';
-```
-
-2. Import the components you need in your project.
-
-```jsx
-import { Button } from '@nakobase/nako-ui';
-
-function App() {
-  return (
-    <Button>Click me</Button>
-  );
-}
-```
+TBD
