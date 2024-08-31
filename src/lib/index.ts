@@ -10,3 +10,4 @@ export {
   AccordionItem,
   AccordionTrigger,
 } from './components/ui/accordion';
+export { Alert, AlertDescription, AlertTitle } from './components/ui/alert';
