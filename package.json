@@ -13,25 +13,15 @@
       "types": "./dist/types/index.d.ts"
     },
     "./style.css": "./dist/style.css",
-    "./Button": {
-      "require": "./dist/Button.cjs",
-      "import": "./dist/Button.js",
-      "types": "./dist/types/components/ui/button.d.ts"
+    "./ui/*": {
+      "require": "./dist/components/ui/*/index.cjs",
+      "import": "./dist/components/ui/*/index.js",
+      "types": "./dist/types/components/ui/*/index.d.ts"
     },
-    "./Container": {
-      "require": "./dist/Container.cjs",
-      "import": "./dist/Container.js",
-      "types": "./dist/types/components/layouts/index.d.ts"
-    },
-    "./Alert": {
-      "require": "./dist/Alert.cjs",
-      "import": "./dist/Alert.js",
-      "types": "./dist/types/components/ui/alert.d.ts"
-    },
-    "./Accordion": {
-      "require": "./dist/Accordion.cjs",
-      "import": "./dist/Accordion.js",
-      "types": "./dist/types/components/ui/accordion.d.ts"
+    "./layouts/*": {
+      "require": "./dist/components/layouts/*/index.cjs",
+      "import": "./dist/components/layouts/*/index.js",
+      "types": "./dist/types/components/layouts/*/index.d.ts"
     }
   },
   "files": [
@@ -54,9 +44,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && pnpm run build:js && pnpm run copy:css",
+    "build": "rm -rf dist && pnpm run build:js",
     "build:js": "tsc -b && vite build",
-    "copy:css": "cp src/lib/styles/base.css dist/base.css",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
