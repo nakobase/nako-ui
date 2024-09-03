@@ -5,7 +5,7 @@ const meta: Meta<typeof Container> = {
   argTypes: {},
   component: Container,
   tags: ['autodocs'],
-  title: 'Components/Layouts/Container',
+  title: 'components/layouts/Container',
 };
 
 export default meta;
