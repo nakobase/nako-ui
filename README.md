@@ -22,4 +22,23 @@ bun add @nakobase/nako-ui
 
 ## Usage
 
-TBD
+To start using the components, please follow these steps:
+
+1. Import styles in your project:
+
+```jsx
+import '@nakobase/nako-ui/style.css';
+```
+
+2. Import the components you need:
+
+```jsx
+import { Button } from '@nakobase/nako-ui';
+
+function App() {
+  return (
+    <Button size="lg">Click me</Button>
+  );
+}
+```
+

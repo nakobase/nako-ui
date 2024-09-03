@@ -60,7 +60,7 @@ devDependencies:
     version: 8.2.9(react-dom@18.3.1)(react@18.3.1)(storybook@8.2.9)(typescript@5.5.4)
   '@storybook/react-vite':
     specifier: ^8.2.9
-    version: 8.2.9(react-dom@18.3.1)(react@18.3.1)(storybook@8.2.9)(typescript@5.5.4)(vite@5.4.2)
+    version: 8.2.9(react-dom@18.3.1)(react@18.3.1)(rollup@4.21.0)(storybook@8.2.9)(typescript@5.5.4)(vite@5.4.2)
   '@storybook/test':
     specifier: ^8.2.9
     version: 8.2.9(storybook@8.2.9)
@@ -136,6 +136,9 @@ devDependencies:
   react-dom:
     specifier: ^18.3.1
     version: 18.3.1(react@18.3.1)
+  rollup-preserve-directives:
+    specifier: ^1.1.1
+    version: 1.1.1(rollup@4.21.0)
   sass-embedded:
     specifier: ^1.77.8
     version: 1.77.8
@@ -180,7 +183,7 @@ devDependencies:
     version: 5.4.2(@types/node@22.5.0)(sass-embedded@1.77.8)
   vite-plugin-dts:
     specifier: ^4.0.3
-    version: 4.0.3(@types/node@22.5.0)(typescript@5.5.4)(vite@5.4.2)
+    version: 4.0.3(@types/node@22.5.0)(rollup@4.21.0)(typescript@5.5.4)(vite@5.4.2)
 
 packages:
 
@@ -2548,7 +2551,7 @@ packages:
       react: 18.3.1
     dev: true
 
-  /@rollup/pluginutils@5.1.0:
+  /@rollup/pluginutils@5.1.0(rollup@4.21.0):
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -2560,6 +2563,7 @@ packages:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
+      rollup: 4.21.0
     dev: true
 
   /@rollup/rollup-android-arm-eabi@4.21.0:
@@ -3252,7 +3256,7 @@ packages:
       storybook: 8.2.9
     dev: true
 
-  /@storybook/react-vite@8.2.9(react-dom@18.3.1)(react@18.3.1)(storybook@8.2.9)(typescript@5.5.4)(vite@5.4.2):
+  /@storybook/react-vite@8.2.9(react-dom@18.3.1)(react@18.3.1)(rollup@4.21.0)(storybook@8.2.9)(typescript@5.5.4)(vite@5.4.2):
     resolution: {integrity: sha512-Lw6FzcAaL7jX8Y8EsDzg32Lp0NdeNJZpj0LVwX5sLOQQA6w4i3PqlFINXDY28qCGo6wqKT+w44zhgwUcU5V0Ow==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -3262,7 +3266,7 @@ packages:
       vite: ^4.0.0 || ^5.0.0
     dependencies:
       '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.1(typescript@5.5.4)(vite@5.4.2)
-      '@rollup/pluginutils': 5.1.0
+      '@rollup/pluginutils': 5.1.0(rollup@4.21.0)
       '@storybook/builder-vite': 8.2.9(storybook@8.2.9)(typescript@5.5.4)(vite@5.4.2)
       '@storybook/react': 8.2.9(react-dom@18.3.1)(react@18.3.1)(storybook@8.2.9)(typescript@5.5.4)
       find-up: 5.0.0
@@ -8771,6 +8775,15 @@ packages:
       glob: 7.2.3
     dev: true
 
+  /rollup-preserve-directives@1.1.1(rollup@4.21.0):
+    resolution: {integrity: sha512-+eQafbuEfDPfxQ9hQPlwaROfin4yiVRxap8hnrvvvcSGoukv1tTiYpAW9mvm3uR8J+fe4xd8FdVd5rz9q7jZ+Q==}
+    peerDependencies:
+      rollup: ^2.0.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      magic-string: 0.30.11
+      rollup: 4.21.0
+    dev: true
+
   /rollup@4.21.0:
     resolution: {integrity: sha512-vo+S/lfA2lMS7rZ2Qoubi6I5hwZwzXeUIctILZLbHI+laNtvhhOIon2S1JksA5UEDQ7l3vberd0fxK44lTYjbQ==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
@@ -10212,7 +10225,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite-plugin-dts@4.0.3(@types/node@22.5.0)(typescript@5.5.4)(vite@5.4.2):
+  /vite-plugin-dts@4.0.3(@types/node@22.5.0)(rollup@4.21.0)(typescript@5.5.4)(vite@5.4.2):
     resolution: {integrity: sha512-+xnTsaONwU2kV6zhRjtbRJSGN41uFR/whqmcb4k4fftLFDJElxthp0PP5Fq8gMeM9ytWMt1yk5gGgekLREWYQQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -10223,7 +10236,7 @@ packages:
         optional: true
     dependencies:
       '@microsoft/api-extractor': 7.47.4(@types/node@22.5.0)
-      '@rollup/pluginutils': 5.1.0
+      '@rollup/pluginutils': 5.1.0(rollup@4.21.0)
       '@volar/typescript': 2.4.0
       '@vue/language-core': 2.0.29(typescript@5.5.4)
       compare-versions: 6.1.1

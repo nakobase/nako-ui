@@ -3,19 +3,31 @@
   "description": "Accessible, reusable and simple React UI components.",
   "version": "0.0.1",
   "type": "module",
-  "main": "dist/index.umd.cjs",
+  "main": "dist/index.cjs",
   "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.umd.cjs",
-      "import": "./dist/index.js"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
     },
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/style.css",
+    "./ui/*": {
+      "require": "./dist/components/ui/*/index.cjs",
+      "import": "./dist/components/ui/*/index.js",
+      "types": "./dist/types/components/ui/*/index.d.ts"
+    },
+    "./layouts/*": {
+      "require": "./dist/components/layouts/*/index.cjs",
+      "import": "./dist/components/layouts/*/index.js",
+      "types": "./dist/types/components/layouts/*/index.d.ts"
+    }
   },
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nakobase/nako-ui.git"
@@ -32,9 +44,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && pnpm run build:js && pnpm run copy:css",
+    "build": "rm -rf dist && pnpm run build:js",
     "build:js": "tsc -b && vite build",
-    "copy:css": "cp src/lib/styles/base.css dist/base.css",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -48,6 +59,7 @@
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "^9.9.0",
+    "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
@@ -85,6 +97,7 @@
     "prettier-plugin-tailwindcss": "^0.6.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "rollup-preserve-directives": "^1.1.1",
     "sass-embedded": "^1.77.8",
     "semantic-release": "^24.1.0",
     "storybook": "^8.2.9",
@@ -99,8 +112,7 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
-    "vite-plugin-dts": "^4.0.3",
-    "@radix-ui/react-accordion": "^1.2.0"
+    "vite-plugin-dts": "^4.0.3"
   },
   "peerDependencies": {
     "react": "^18.3.1",
