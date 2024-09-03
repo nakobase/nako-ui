@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/nakobase/nako-ui/compare/v1.1.0...v1.2.0) (2024-09-03)
+
+
+### Features
+
+* add AspectRatio component ([cd66cfd](https://github.com/nakobase/nako-ui/commit/cd66cfd107e7ec50d34f44c2fcca49708157e16f))
+* add more stories for Button ([b962b03](https://github.com/nakobase/nako-ui/commit/b962b0352f4321a59c2fe3344c613f3673399749))
+
 # [1.1.0](https://github.com/nakobase/nako-ui/compare/v1.0.0...v1.1.0) (2024-08-31)
 
 
