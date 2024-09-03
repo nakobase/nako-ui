@@ -4,6 +4,20 @@
 
 @layer base {
   :root {
+    /* fontsize */
+    --fontsize-xs: 0.75rem;
+    --fontsize-sm: 0.875rem;
+    --fontsize-md: 1rem;
+    --fontsize-lg: 1.125rem;
+    --fontsize-xl: 1.25rem;
+    --fontsize-2xl: 1.5rem;
+    --fontsize-3xl: 1.875rem;
+    --fontsize-4xl: 2.25rem;
+    --fontsize-5xl: 3rem;
+    --fontsize-6xl: 3.75rem;
+    --fontsize-7xl: 4.5rem;
+    --fontsize-8xl: 6rem;
+    --fontsize-9xl: 8rem;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -31,7 +45,8 @@
     --chart-5: 27 87% 67%;
   }
 
-  .dark {
+  .dark,
+  :root[class~="dark"] {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
