@@ -50,6 +50,10 @@ export default defineConfig({
           resolve(__dirname, 'src/lib/components/layouts'),
           'layouts',
         ),
+        ...generateEntryPoints(
+          resolve(__dirname, 'src/lib/components/parts'),
+          'parts',
+        ),
         index: resolve(__dirname, 'src/lib/index.ts'),
       },
       fileName: '[name]',
