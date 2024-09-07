@@ -17,7 +17,8 @@ export const ButtonWithIcon: FC<Props> = ({
     ? cloneElement(icon, {
         ...icon.props,
         className: cn(
-          `nako-w-4 nako-h-4 ${left ? 'nako-mr-2' : 'nako-ml-2'}`,
+          `nako-w-4 nako-h-4`,
+          { 'nako-ml-2': !left, 'nako-mr-2': left },
           icon.props.className,
         ),
       })
