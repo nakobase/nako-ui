@@ -5,19 +5,19 @@
 @layer base {
   :root {
     /* fontsize */
-    --fontsize-xs: 0.75rem;
-    --fontsize-sm: 0.875rem;
-    --fontsize-md: 1rem;
-    --fontsize-lg: 1.125rem;
-    --fontsize-xl: 1.25rem;
-    --fontsize-2xl: 1.5rem;
-    --fontsize-3xl: 1.875rem;
-    --fontsize-4xl: 2.25rem;
-    --fontsize-5xl: 3rem;
-    --fontsize-6xl: 3.75rem;
-    --fontsize-7xl: 4.5rem;
-    --fontsize-8xl: 6rem;
-    --fontsize-9xl: 8rem;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+    --font-size-6xl: 3.75rem;
+    --font-size-7xl: 4.5rem;
+    --font-size-8xl: 6rem;
+    --font-size-9xl: 8rem;
     /* radius */
     --radius: 0.5rem;
     /* colors */
