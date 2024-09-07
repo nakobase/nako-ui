@@ -22,6 +22,16 @@
       "require": "./dist/components/layouts/*/index.cjs",
       "import": "./dist/components/layouts/*/index.js",
       "types": "./dist/types/components/layouts/*/index.d.ts"
+    },
+    "./parts/*": {
+      "require": "./dist/components/parts/*/index.cjs",
+      "import": "./dist/components/parts/*/index.js",
+      "types": "./dist/types/components/parts/*/index.d.ts"
+    },
+    "./elements/*": {
+      "require": "./dist/components/elements/*/index.cjs",
+      "import": "./dist/components/elements/*/index.js",
+      "types": "./dist/types/components/elements/*/index.d.ts"
     }
   },
   "files": [
