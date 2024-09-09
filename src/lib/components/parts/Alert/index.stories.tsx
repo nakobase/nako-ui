@@ -14,7 +14,7 @@ type Story = StoryObj<typeof Alert>;
 
 export const Default: Story = {
   args: {
-    description: 'This is an alert message.',
+    description: 'This is a message.',
     title: 'Heads up!',
     variant: 'info',
   },

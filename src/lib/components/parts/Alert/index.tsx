@@ -15,7 +15,7 @@ type Props = {
 
 export const Alert: FC<Props> = ({ variant = 'info', title, description }) => {
   const className = cn('nako-border-none', {
-    'nako-bg-error nako-text-error-foreground [&>svg]:nako-text-danger-foreground':
+    'nako-bg-danger nako-text-danger-foreground [&>svg]:nako-text-danger-foreground':
       variant === 'danger',
     'nako-bg-info nako-text-info-foreground [&>svg]:nako-text-info-foreground':
       variant === 'info',
@@ -27,9 +27,9 @@ export const Alert: FC<Props> = ({ variant = 'info', title, description }) => {
 
   return (
     <_Alert className={className}>
-      {variant !== 'success' && <Info className="h-4 w-4" />}
-      {variant === 'success' && <CheckCircle className="h-4 w-4" />}
-      {title && <AlertTitle>Heads up!</AlertTitle>}
+      {variant !== 'success' && <Info className="nako-h-4 nako-w-4" />}
+      {variant === 'success' && <CheckCircle className="nako-h-4 nako-w-4" />}
+      {title && <AlertTitle>{title}</AlertTitle>}
       <AlertDescription>{description}</AlertDescription>
     </_Alert>
   );
