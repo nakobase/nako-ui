@@ -22,6 +22,16 @@
       "require": "./dist/components/layouts/*/index.cjs",
       "import": "./dist/components/layouts/*/index.js",
       "types": "./dist/types/components/layouts/*/index.d.ts"
+    },
+    "./parts/*": {
+      "require": "./dist/components/parts/*/index.cjs",
+      "import": "./dist/components/parts/*/index.js",
+      "types": "./dist/types/components/parts/*/index.d.ts"
+    },
+    "./elements/*": {
+      "require": "./dist/components/elements/*/index.cjs",
+      "import": "./dist/components/elements/*/index.js",
+      "types": "./dist/types/components/elements/*/index.d.ts"
     }
   },
   "files": [
@@ -49,7 +59,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "generate:components": "plop --plopfile generators/index.cjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0"
@@ -60,8 +71,10 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "^9.9.0",
     "@radix-ui/react-accordion": "^1.2.0",
-    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-alert-dialog": "^1.1.1",
     "@radix-ui/react-aspect-ratio": "^1.1.0",
+    "@radix-ui/react-avatar": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^10.1.7",
@@ -95,6 +108,7 @@
     "globals": "^15.9.0",
     "husky": "^9.1.5",
     "lucide-react": "^0.436.0",
+    "plop": "^4.0.1",
     "postcss": "^8.4.41",
     "prettier-plugin-tailwindcss": "^0.6.6",
     "react": "^18.3.1",
