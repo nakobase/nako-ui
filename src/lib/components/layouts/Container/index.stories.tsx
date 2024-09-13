@@ -15,6 +15,7 @@ type Story = StoryObj<typeof Container>;
 export const Default: Story = {
   args: {
     as: 'div',
+    className: 'nako-bg-secondary nako-p-4',
   },
   render: (args) => <Container {...args}>Container</Container>,
 };
