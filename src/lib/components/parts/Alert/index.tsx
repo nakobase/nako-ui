@@ -8,9 +8,9 @@ import {
 import { cn } from '@/utils';
 
 type Props = {
-  variant?: 'info' | 'warning' | 'danger' | 'success';
-  title?: string;
   description: string;
+  title?: string;
+  variant?: 'info' | 'warning' | 'danger' | 'success';
 };
 
 export const Alert: FC<Props> = ({ variant = 'info', title, description }) => {
