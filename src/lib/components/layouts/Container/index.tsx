@@ -1,6 +1,5 @@
 import { ComponentPropsWithoutRef, FC } from 'react';
 import cx from 'clsx';
-import styles from './style.module.scss';
 
 type AsType =
   | 'div'
@@ -26,9 +25,11 @@ export const Container: FC<Props<AsType>> = ({
   ...props
 }) => {
   const cns = cx(
-    styles.base,
-    maxW && styles[`max-w-${maxW}`],
-    'hover:nako-bg-secondary/80',
+    'nako-m-auto nako-w-full',
+    {
+      'nako-max-w-md': maxW === 'md',
+      'nako-max-w-sm': maxW === 'sm',
+    },
     className,
   );
 
