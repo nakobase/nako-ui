@@ -74,6 +74,7 @@
     "@radix-ui/react-alert-dialog": "^1.1.1",
     "@radix-ui/react-aspect-ratio": "^1.1.0",
     "@radix-ui/react-avatar": "^1.1.0",
+    "@radix-ui/react-checkbox": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
@@ -94,6 +95,7 @@
     "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
+    "embla-carousel-react": "^8.3.0",
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
@@ -130,14 +132,13 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
-    "vite-plugin-dts": "^4.0.3",
-    "embla-carousel-react": "^8.3.0"
+    "vite-plugin-dts": "^4.0.3"
   },
   "peerDependencies": {
     "date-fns": "^4.1.0",
+    "embla-carousel-react": "^8.3.0",
     "react": "^18.3.1",
     "react-day-picker": "8.10.1",
-    "react-dom": "^18.3.1",
-    "embla-carousel-react": "^8.3.0"
+    "react-dom": "^18.3.1"
   }
 }
