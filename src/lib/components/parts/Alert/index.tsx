@@ -10,18 +10,18 @@ import { cn } from '@/utils';
 type Props = {
   description: string;
   title?: string;
-  variant?: 'info' | 'warning' | 'danger' | 'success';
+  variant?: 'info' | 'warning' | 'danger' | 'success' | 'normal';
 };
 
 export const Alert: FC<Props> = ({ variant = 'info', title, description }) => {
-  const className = cn('nako-border-none', {
-    'nako-bg-danger nako-text-danger-foreground [&>svg]:nako-text-danger-foreground':
+  const className = cn('', {
+    'nako-bg-hazard nako-text-hazard-foreground nako-border-none [&>svg]:nako-text-hazard-foreground':
       variant === 'danger',
-    'nako-bg-info nako-text-info-foreground [&>svg]:nako-text-info-foreground':
+    'nako-bg-info nako-text-info-foreground nako-border-none [&>svg]:nako-text-info-foreground':
       variant === 'info',
-    'nako-bg-success nako-text-success-foreground [&>svg]:nako-text-success-foreground':
+    'nako-bg-success nako-text-success-foreground nako-border-none [&>svg]:nako-text-success-foreground':
       variant === 'success',
-    'nako-bg-warning nako-text-warning-foreground [&>svg]:nako-text-warning-foreground':
+    'nako-bg-warning nako-text-warning-foreground nako-border-none [&>svg]:nako-text-warning-foreground':
       variant === 'warning',
   });
 
