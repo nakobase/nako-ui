@@ -21,7 +21,6 @@ type Props = {
 
 export const AlertDialog: FC<Props> = ({
   triggerContent,
-
   title,
   description,
   cancelText,
