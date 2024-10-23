@@ -73,7 +73,7 @@ module.exports = {
           DEFAULT: 'hsl(var(--warning))',
           foreground: 'hsl(var(--warning-foreground))',
         },
-        danger: {
+        hazard: {
           DEFAULT: 'hsl(var(--danger))',
           foreground: 'hsl(var(--danger-foreground))',
         },
@@ -82,6 +82,10 @@ module.exports = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 4px)',
         sm: 'calc(var(--radius) - 8px)',
+      },
+      maxWidth: {
+        sm: 'var(--max-width-sm)',
+        md: 'var(--max-width-md)',
       },
       keyframes: {
         'accordion-down': {
