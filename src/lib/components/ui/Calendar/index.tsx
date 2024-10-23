@@ -44,10 +44,8 @@ function Calendar({
         months:
           'nako-flex nako-flex-col sm:nako-flex-row nako-space-y-4 sm:nako-space-x-4 sm:nako-space-y-0',
         nav: 'nako-space-x-1 nako-flex nako-items-center',
-        nav_button: cn(
-          buttonVariants({ variant: 'outline' }),
-          'nako-h-7 nako-w-7 nako-bg-transparent nako-p-0 nako-opacity-50 hover:nako-opacity-100',
-        ),
+        nav_button:
+          'nako-h-7 nako-w-7 nako-bg-transparent nako-p-0 nako-opacity-50 hover:nako-opacity-100 nako-border nako-border-input nako-bg-background hover:nako-bg-accent hover:nako-text-accent-foreground nako-inline-flex nako-items-center nako-justify-center nako-whitespace-nowrap nako-rounded-md nako-text-sm nako-font-medium nako-ring-offset-background nako-transition-colors focus-visible:nako-outline-none focus-visible:nako-ring-2 focus-visible:nako-ring-ring focus-visible:nako-ring-offset-2 disabled:nako-pointer-events-none disabled:nako-opacity-50 nako-border nako-border-input nako-bg-background hover:nako-bg-accent hover:nako-text-accent-foreground',
         nav_button_next: 'nako-absolute nako-right-1',
         nav_button_previous: 'nako-absolute nako-left-1',
         row: 'nako-flex nako-w-full nako-mt-2',
@@ -67,6 +65,7 @@ function Calendar({
     />
   );
 }
+
 Calendar.displayName = 'Calendar';
 
 export { Calendar };
