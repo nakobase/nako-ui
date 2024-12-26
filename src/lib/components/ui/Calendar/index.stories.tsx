@@ -14,7 +14,7 @@ type Story = StoryObj<typeof Calendar>;
 
 export const Default: Story = {
   args: {},
-  render: (args) => (
+  render: () => (
     <Calendar
       className="rounded-md border"
       mode="single"
